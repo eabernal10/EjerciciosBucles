@@ -29,11 +29,13 @@ namespace EjerciciosBucles
             int j = 1;
             string aux = "";
             //generar la tabla
-            while(j <= tabla)
+            // limpiar lisbox
+            while(j <= 12)
             {
                 //Console.WriteLine($"{tabla} x {j} = {tabla * j}");
+                string cad = $"{tabla} x {j} = {tabla * j}";
                 aux = aux + $"{tabla} x {j} = {tabla * j}" + Environment.NewLine;
-               
+               this.lstTabla.Items.Add(cad);
                 j++;
             }
             //mostrar el resultado
@@ -44,6 +46,14 @@ namespace EjerciciosBucles
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void lstTabla_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lstTabla.Items.Add(textBox2.Text);
+            //Aqui es donde pasamos el parámetro
+            textBox2.Text = "";
+            textBox2.Focus();
         }
     }
 }
