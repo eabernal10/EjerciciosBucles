@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBinario.Designer.cs">
+      <DependentUpon>FrmBinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbinaro_a_decimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbinaro_a_decimal.Designer.cs">
+      <DependentUpon>frmbinaro_a_decimal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBucleWhile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBinario.resx">
+      <DependentUpon>FrmBinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbinaro_a_decimal.resx">
+      <DependentUpon>frmbinaro_a_decimal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBucleWhile.resx">
       <DependentUpon>frmBucleWhile.cs</DependentUpon>
     </EmbeddedResource>

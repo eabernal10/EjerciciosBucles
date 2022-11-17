@@ -29,6 +29,7 @@ namespace EjerciciosBucles
             int j = 1;
             string aux = "";
             //generar la tabla
+            this.lstTabla.Items.Clear();    
             // limpiar lisbox
             while(j <= 12)
             {
